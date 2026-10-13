@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "ePortal Logo Swap",
+  "version": "1.0.0",
+  "description": "Replaces the ePortal navbar logo on eportal.pwr.edu.pl",
+  "content_scripts": [
+    {
+      "matches": ["*://eportal.pwr.edu.pl/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
